@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MS PLANTS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="/assets/outdoor-plant.jpg" />
+    <link rel="stylesheet" href="./cart.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="shop">
+      <div>
+        <h1><i class="fa-brands fa-canadian-maple-leaf"></i>MS</h1>
+      </div>
+      <div>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checking">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <ul>
+          <a href="./home.html"><li>Home</li></a>
+          <a href="./shop.html"><li>Shop</li></a>
+          <a href="./about.html"><li>About</li></a>
+          <a href="./contact.html"><li>Contact</li></a>
+          <a href="./register.html"><li>Login</li></a>
+          <a href="./shop.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      <h2>Your Shopping Cart</h2>
+      <div id="cart-container">
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0</p>
+        <button onclick="window.location.href = 'checkout.html'">
+          Proceed to Checkout
+        </button>
+      </div>
+
+      
+      <script>
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        function renderCart() {
+          let cartItems = document.getElementById("cart-items");
+          let total = 0;
+          cartItems.innerHTML = "";
+          cart.forEach((item, index) => {
+            total += parseFloat(item.price);
+            cartItems.innerHTML += ` <li> ${item.name} - $${item.price} <button onclick="removeItem(${index})">Remove</button> </li> `;
+          });
+          document.getElementById("cart-total").textContent =
+            "Total: $" + total.toFixed(2);
+        }
+        function removeItem(index) {
+          cart.splice(index, 1);
+          localStorage.setItem("cart", JSON.stringify(cart));
+          renderCart();
+        }
+        renderCart();
+      </script>
+    </div>
+  </body>
+</html>

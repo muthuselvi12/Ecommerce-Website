@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* hero section */
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.781);
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.navbar li:hover {
+  color: rgba(34, 33, 33, 0.669);
+}
+
+.checking {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.navbar,
+a,
+li {
+  color: rgb(0, 0, 0);
+}
+
+/* content */
+
+.value {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #eef2f3;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkgreen;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  /* hero section */
+
+  .navbar {
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    justify-content: space-between;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .checking {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(48, 119, 48);
+    align-items: center;
+  }
+
+  .navbar a {
+    text-decoration: none;
+  }
+
+  .navbar li {
+    padding: 6px 8px;
+    font-size: 13px;
+    display: block;
+  }
+
+  .value {
+    padding: 10px;
+  }
+
+  form {
+    max-width: 100%;
+    padding: 15px;
+    margin: 15px 5px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 15px;
+    margin-top: 12px;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 10px;
+    font-size: 16px;
+    width: 240px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 12px;
+    margin-top: 18px;
+    width: 150px;
+    display: block;
+    margin: auto;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* hero section */
+
+  .navbar {
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    justify-content: space-between;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .checking {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 4px;
+    width: 100%;
+    background-color: rgb(48, 119, 48);
+    align-items: center;
+  }
+
+  .navbar a {
+    text-decoration: none;
+  }
+
+  .navbar li {
+    padding: 6px 8px;
+    font-size: 13px;
+    display: block;
+  }
+  .value {
+    padding: 25px;
+  }
+
+  form {
+    max-width: 600px;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: 14px;
+    width: 550px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 15px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    align-items: center;
+  }
+}

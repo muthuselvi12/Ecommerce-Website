@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MS PLANTS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="/assets/outdoor-plant.jpg" />
+    <link rel="stylesheet" href="./checkout.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="shop">
+      <div>
+        <h1><i class="fa-brands fa-canadian-maple-leaf"></i>MS</h1>
+      </div>
+      <div>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checking">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <ul>
+          <a href="./home.html"><li>Home</li></a>
+          <a href="./shop.html"><li>Shop</li></a>
+          <a href="./about.html"><li>About</li></a>
+          <a href="./contact.html"><li>Contact</li></a>
+          <a href="./register.html"><li>Login</li></a>
+          <a href="./shop.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </ul>
+      </div>
+    </nav>
+    <div class="value">
+      <h1>Checkout</h1>
+      <form id="checkout-form" onsubmit="submitting()">
+        <label>Name:</label> <input type="text" id="name" required />
+        <label>Email:</label> <input type="email" id="email" required />
+        <label>Address:</label> <textarea id="address" required></textarea>
+        <label>Payment Method:</label>
+        <select id="payment" required>
+          <option value="">Select</option>
+          <option value="card">Credit/Debit Card</option>
+          <option value="cod">Cash on Delivery</option>
+        </select>
+        <button type="submit">Place Order</button>
+      </form>
+
+      
+      <script>
+       function submitting(){
+        alert("Order Placed Successfully!")
+       }
+      </script>
+    </div>
+  </body>
+</html>

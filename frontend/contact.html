@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="./contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="headbg bgclr">
+      <nav class="navbar">
+        <div>
+          <h1><i class="fa-brands fa-canadian-maple-leaf"></i>MS</h1>
+        </div>
+        <div>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checking">
+            <i class="fas fa-bars"></i>
+          </label>
+
+          <ul>
+            <a href="./home.html"><li>Home</li></a>
+            <a href="./shop.html"><li>Shop</li></a>
+            <a href="./about.html"><li>About</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+            <a href="./register.html"><li>Login</li></a>
+            <a href="./shop.html"><i class="fa-solid fa-bag-shopping"></i></a>
+             <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </ul>
+        </div>
+      </nav>
+
+      <header id="hero">
+        <div>
+          <p class="wel">Contact Us</p>
+          <br /><span>
+            <h1 class="headletter">Let’s Connect</h1>
+          </span>
+        </div>
+      </header>
+    </div>
+
+    <section>
+      <div class="gridd">
+        <div>
+          <div class="letter">
+            <h1 class="msg">Send us Message</h1>
+            <div class="flexx">
+              <div><i class="fa-solid fa-phone fond"></i></div>
+              <div>
+                <h2>Phone</h2>
+                <p>555-1234-678</p>
+              </div>
+            </div>
+            <div class="flexx">
+              <div><i class="fa-solid fa-envelope fond"></i></div>
+              <div>
+                <h2>Email</h2>
+                <p>mail@example.com</p>
+              </div>
+            </div>
+            <div class="flexx">
+              <div><i class="fa-solid fa-location-dot fond"></i></div>
+              <div>
+                <h2>Address</h2>
+                <p>2972 Westheimer Rd., chennai</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form  onsubmit="submited()">
+            <div class="send">
+              <label for="name">Name</label><br />
+              <input type="text" placeholder="Enter Your Name" required />
+            </div>
+            <div class="send">
+              <label for="email">Email</label><br />
+              <input type="email" placeholder="yourmailid@gmail.com" required />
+            </div>
+            <div class="send">
+              <label for="password">Password</label><br />
+              <input type="password" placeholder=".............." required/>
+            </div>
+            <div class="send">
+              <label for="tel">Phone Number</label><br />
+              <input type="tel" placeholder="Enter Your Phone Number" required />
+            </div>
+            <div class="send">
+              <label for="FeedBack">FeedBack</label><br />
+              <textarea name="" id="FeedBack"></textarea>
+            </div>
+            <div class="send">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="ready">
+      <div class="sale">
+        <p class="item">Ready to Find your Perfect Plant?</p>
+        <p class="item1">
+          Browse our online store or visit us in <br />
+          person to experience the beauty of nature.
+        </p>
+      </div>
+    </section>
+    <footer class="last">
+      <h1><i class="fa-brands fa-canadian-maple-leaf"></i>MS</h1>
+      <!-- <hr> -->
+      <p>Copyright © 2026 Generic ecommerce</p>
+      <i class="fa-brands fa-facebook foot"></i
+      ><i class="fa-brands fa-instagram foot"></i
+      ><i class="fa-brands fa-twitter foot"></i
+      ><i class="fa-brands fa-youtube foot"></i>
+    </footer>
+
+    <script>
+      function submited(){
+        alert("SUBMITTED SUCCESSFULLY CONTINUE SHOPPING")
+       
+      }
+    </script>
+  </body>
+</html>

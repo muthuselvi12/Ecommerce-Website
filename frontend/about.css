@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+/* hero section */
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  color: rgba(20, 20, 20, 0.781);
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.checking {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.navbar li:hover {
+  color: rgba(49, 47, 47, 0.669);
+}
+
+.navbar,
+a,
+li {
+  color: rgb(255, 255, 255);
+}
+
+.headbg {
+  background-image: url("/assets/about-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.338);
+  background-repeat: no-repeat;
+}
+
+header {
+  text-align: center;
+  /* margin: 50px; */
+  padding: 50px;
+}
+
+.wel {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.headletter {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: rgb(255, 255, 255);
+}
+
+/* about */
+img {
+  width: 100%;
+  height: 100%;
+}
+.count {
+  background-color: rgb(229, 230, 202);
+  padding: 20px;
+}
+
+.separate {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  justify-content: center;
+}
+
+.word {
+  text-align: justify;
+  margin-top: 40px;
+  /* width: ; */
+}
+
+.pot {
+  width: 470px;
+  height: 480px;
+  margin: 20px;
+}
+
+.sold {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  /* font-size: 20px; */
+}
+
+.space {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.hr {
+  margin: 5px;
+}
+
+.premier {
+  font-size: 40px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+}
+
+/* ready */
+
+.ready {
+  background-position: center;
+  background-attachment: fixed;
+  height: 290px;
+  background-size: cover;
+  /* width: 100%; */
+  /* background-color: rgba(0, 0, 0, 0.338); */
+  background-repeat: no-repeat;
+  animation: slider 15s linear infinite;
+}
+
+@keyframes slider {
+  0% {
+    background-image: url("/assets/bowl.jpg!w700wp");
+  }
+  30% {
+    background-image: url("/assets/plant2.webp");
+    /* color: white; */
+  }
+  60% {
+    background-image: url("/assets/plant3.jpg");
+    /* color: white; */
+  }
+  100% {
+    background-image: url("/assets/plant\ 4.jpg");
+    /* color: white; */
+  }
+}
+
+.sale {
+  text-align: center;
+  color: white;
+  /* margin: 40px; */
+  padding: 45px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.item {
+  margin: 20px 0px;
+  font-size: 40px;
+}
+
+.item1 {
+  margin-bottom: 30px;
+}
+
+/* last */
+
+.last {
+  background-color: rgb(229, 230, 202);
+  padding: 20px;
+  text-align: center;
+}
+
+.last h1 {
+  margin-bottom: 10px;
+}
+
+.last p {
+  margin: 20px 0px;
+}
+
+.foot {
+  padding-right: 5px;
+}
+
+@media screen and (min-width:0px) and (max-width: 768px) {
+  /* hero section */
+
+  .navbar {
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    justify-content: space-between;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .checking {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(48, 119, 48);
+    align-items: center;
+  }
+
+  .navbar a {
+    text-decoration: none;
+  }
+
+  .navbar li {
+    padding: 6px 8px;
+    font-size: 13px;
+    display: block;
+  }
+
+  /* header {
+    padding: 20px 15px;
+    margin: 10px;
+  } */
+
+  .wel {
+    font-size: 20px;
+  }
+
+  .headletter {
+    font-size: 28px;
+  }
+
+  .headbg {
+    min-height: 50vh;
+    background-size: cover !important;
+  }
+
+  /* about */
+
+  .count {
+    padding: 15px 12px;
+  }
+
+  .separate {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pot {
+    width: 270px;
+    height: 280px;
+  }
+
+  .word {
+    margin: 20px;
+
+  }
+
+  .sold {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .space {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .premier {
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+
+  .sold{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .sold h2, p{
+    font-size: 16px;
+  }
+
+  /* ready */
+
+  .ready {
+    height: 250px;
+    background-attachment: scroll;
+    animation-duration: 25s;
+  }
+
+  .sale {
+    padding: 20px 15px;
+  }
+
+  .item {
+    font-size: 24px;
+  }
+
+  .item1 {
+    margin-bottom: 15px;
+  }
+
+  /* last */
+
+  .last {
+    padding: 15px 12px;
+  }
+
+  .last h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .last p {
+    font-size: 14px;
+    margin: 12px 0;
+  }
+
+  .foot {
+    padding-right: 3px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* hero section */
+
+  .navbar {
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    justify-content: space-between;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+  .checking {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 4px;
+    width: 100%;
+    background-color: rgb(48, 119, 48);
+    align-items: center;
+  }
+
+  .navbar a {
+    text-decoration: none;
+  }
+
+  .navbar li {
+    padding: 6px 8px;
+    font-size: 13px;
+    display: block;
+  }
+
+  header {
+    padding: 40px 30px;
+  }
+
+  .headletter {
+    font-size: 48px;
+  }
+
+  .wel {
+    font-size: 28px;
+  }
+
+  .headbg {
+    height: 300px;
+  }
+
+  /* about */
+
+  .separate {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .pot {
+    width: 380px;
+    height: 400px;
+  }
+
+  .premier {
+    font-size: 32px;
+  }
+
+  .space {
+    font-size: 18px;
+  }
+
+  /* ready */
+
+  .ready {
+    height: 250px;
+    background-attachment: fixed;
+  }
+
+  .sale {
+    padding: 35px 25px;
+  }
+
+  .item {
+    font-size: 40px;
+  }
+
+  /* last */
+
+  .last {
+    padding: 25px 20px;
+  }
+
+  .last h1 {
+    font-size: 26px;
+  }
+
+  .last p {
+    font-size: 17px;
+    margin: 18px 0;
+  }
+}
